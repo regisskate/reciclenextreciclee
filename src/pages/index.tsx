@@ -7,7 +7,7 @@ export default function Home() {
         <title>Recicle</title>
       </Head>
       <h1>
-        @regisskate
+        @regisskate 🖤 Ana
       </h1>
     </>
   )
