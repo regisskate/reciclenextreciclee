@@ -8,7 +8,6 @@ export function Header() {
           <nav>
             <a href=""><FaRecycle /></a>
             <a className={styles.active}>Home</a>
-            <a href="">Grafico</a>
           </nav>
           <button>DDS</button>
         </div>

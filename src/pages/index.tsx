@@ -11,9 +11,8 @@ export default function Home() {
       <Head>
         <title>Recicle</title>
       </Head>
-      <main>
-        <div>Recicle</div>
-        <section className={styles.homeContainer}>
+      <main className={styles.homeContainer}>
+        <section className={styles.homeContent}>
           <button>
             <img src="/images/aglutinador.svg" alt="aglutinador" />
             <span>Aglutinador</span>
