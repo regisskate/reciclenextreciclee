@@ -1,6 +1,11 @@
 import styles from './styles.module.scss';
 import { FaRecycle } from 'react-icons/fa'
-export function Header() {
+
+interface HeaderProps {
+  onOpenDdsModal: () => void;
+}
+
+export function Header({ onOpenDdsModal }: HeaderProps) {
   return (
     <>
       <header className={styles.headerContainer}>
@@ -9,7 +14,9 @@ export function Header() {
             <a href=""><FaRecycle /></a>
             <a className={styles.active}>Home</a>
           </nav>
-          <button>DDS</button>
+          <button type="button" onClick={onOpenDdsModal}>
+            DDS
+          </button>
         </div>
       </header>
 
