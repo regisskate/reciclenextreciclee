@@ -34,7 +34,12 @@ export default function Home() {
           <Modal
             isOpen={newProductionRecordOpenModal}
             onRequestClose={handleCloseNewProductionRecordModal}
+            overlayClassName="react-modal-overlay"
+            className="react-modal-content"
           >
+            <button type="button" onClick={handleCloseNewProductionRecordModal} className="react-modal-close">
+              <img src="/images/close.svg" alt="fechar modal" />
+            </button>
             <h1>Aqui vai ser o formulário</h1>
           </Modal>
         </section>

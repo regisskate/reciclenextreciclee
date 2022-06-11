@@ -4,6 +4,9 @@ import { AppProps } from 'next/app';
 import { Header } from '../components/Header';
 
 import '../styles/global.scss';
+import { DdsModal } from '../components/DdsModal';
+
+Modal.setAppElement('body')
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [ddsOpenModal, setDdsOpenModal] = useState(false);
@@ -19,14 +22,10 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Header onOpenDdsModal={handleOpenDdsModal} />
       <Component {...pageProps} />
-      <Modal
+      <DdsModal
         isOpen={ddsOpenModal}
         onRequestClose={handleCloseDdsModal}
-      >
-        <h1>DDS</h1>
-        <h2>Proteção das mãos</h2>
-        <p>Por ser uma parte do corpo que está em constante exposição, é necessária a proteção adequada, com o uso de luvas. Dessa forma, é possível evitar acidentes, como cortes ou queimaduras, comuns quando não estão protegidas.</p>
-      </Modal>
+      />
     </>
   )
 }
