@@ -8,7 +8,7 @@ import Head from 'next/head';
 
 export default function Home() {
   const [newProductionRecordOpenModal, setNewProductionRecordOpenModal] = useState(false);
-
+  const [sendProduction, setSendProduction] = useState('send');
   function handleOpenNewProductionRecordModal() {
     setNewProductionRecordOpenModal(true);
   }
@@ -43,16 +43,23 @@ export default function Home() {
             </button>
             <h1>Aqui vai ser o formulário</h1>
             <p>
-              hora <br></br>
-              <input type="date" name="Data" /><br></br>
-              Cor
-              <input type="color" value="#2d04fd" /><br></br>
+              Data <br></br>
+              <input type="date" name="Data" className="form-control" /><br></br>
+              tipo de material<br></br>
+              <button type="button" className="cores">Cores</button>
+              <button type="button" className="strech">Strech</button>
+              <button type="button" className="azul">Azul</button>
+              <button type="button" className="pvdc">Pvdc</button> <br></br>
 
               Inicio
-              <input type="time" name="Inicio" /><br></br>
+              <input
+                type="time"
+                name="Inicio"
+              /><br></br>
               fim
               <input type="time" name="Fim" />
             </p>
+            <button type="submit">Enviar</button>
           </Modal>
         </section>
       </main>

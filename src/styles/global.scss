@@ -80,7 +80,72 @@ form input {
   padding: 3rem;
   position: relative;
   border-radius: 0.24rem;
+
+  .cores {
+    margin: 0 0.25rem;
+    padding: 1rem;
+    background: #30baf5;
+    color: #fafafc;
+  }
+
+  .strech {
+    margin: 0 0.25rem;
+    padding: 1rem;
+    background: #ededf5;
+    color: #bdbdc8;
+  }
+
+  .azul {
+    margin: 0 0.25rem;
+    padding: 1rem;
+    background: #1109f8;
+    color: #fafafc;
+  }
+
+  .pvdc {
+    margin: 0 0.25rem;
+    padding: 1rem;
+    background: #f2eb61;
+    color: #fafafc;
+  }
+
+  input {
+    width: 100%;
+    padding: 0 1.5rem;
+    height: 4rem;
+    border-radius: 0.25rem;
+
+    border: 1px solid #d7d7d7;
+    background: #e7e9ee;
+
+    font-weight: 400;
+    font-size: 1rem;
+
+  }
+
+
+  button[type="submit"] {
+    width: 100%;
+    padding: 0 1.5rem;
+    height: 4rem;
+    background: #66ff33;
+    color: #ff0000;
+    border-radius: 0.25rem;
+    border: 0;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    font-weight: bold;
+
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(0.9)
+    }
+
+  }
+
 }
+
 
 .react-modal-close {
   position: absolute;
@@ -94,4 +159,5 @@ form input {
   &:hover {
     filter: brightness(0.8);
   }
+
 }
