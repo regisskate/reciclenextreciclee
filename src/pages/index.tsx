@@ -31,6 +31,7 @@ export default function Home() {
             <img src="/images/prensa.svg" alt="prensa" />
             <span>Prensa</span>
           </button>
+
           <Modal
             isOpen={newProductionRecordOpenModal}
             onRequestClose={handleCloseNewProductionRecordModal}
@@ -41,6 +42,17 @@ export default function Home() {
               <img src="/images/close.svg" alt="fechar modal" />
             </button>
             <h1>Aqui vai ser o formulário</h1>
+            <p>
+              hora <br></br>
+              <input type="date" name="Data" /><br></br>
+              Cor
+              <input type="color" value="#2d04fd" /><br></br>
+
+              Inicio
+              <input type="time" name="Inicio" /><br></br>
+              fim
+              <input type="time" name="Fim" />
+            </p>
           </Modal>
         </section>
       </main>
