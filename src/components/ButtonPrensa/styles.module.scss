@@ -1,0 +1,48 @@
+.prensaContainer {}
+
+.prensaContent {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 2rem 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+  button {
+    display: flex 1;
+    align-items: center;
+    font-size: 2rem;
+    color: #66ff33;
+    background: #fff;
+    border: 0;
+    margin: 20px auto;
+    padding: 5rem 7rem;
+    border-radius: 0.25rem;
+    border: 1rem solid #ff0000;
+    transition: filter 0.2s;
+    justify-items: center;
+
+    img {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      width: 5rem;
+      height: 12rem;
+      margin: auto;
+      padding: auto;
+
+    }
+
+    span {
+      color: black;
+      margin-top: 1rem;
+      font-size: 1.25rem;
+    }
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+
+  }
+}
