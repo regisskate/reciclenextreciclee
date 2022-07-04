@@ -2,8 +2,7 @@ import styles from './home.module.scss';
 import Head from 'next/head';
 import { ButtonAglutinador } from '../components/ButtonAglutinador';
 import { ButtonPrensa } from '../components/ButtonPrensa';
-
-
+import { RecordsTable } from '../components/RecordsTable';
 
 
 export default function Home() {
@@ -17,8 +16,8 @@ export default function Home() {
         <section className={styles.homeContent}>
           <ButtonAglutinador />
           <ButtonPrensa />
-
         </section>
+        <RecordsTable />
       </main>
     </>
   )
