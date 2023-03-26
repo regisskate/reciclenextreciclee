@@ -8,11 +8,8 @@ export function FormPrensa() {
       <form className={styles.formContent}>
 
         <h1>PRENSA</h1><br />
+        <span>tipo de material</span>
 
-
-        Data <br></br>
-        <input type="date" name="Data" className="form-control" /><br></br>
-        tipo de material<br></br>
         <section className={styles.typeMaterial}>
           <button type="button" className="colorType"><span>Papelão</span></button>
           <button type="button" className="colorType"><span>Fita</span></button>

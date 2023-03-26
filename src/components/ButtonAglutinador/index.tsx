@@ -1,8 +1,9 @@
-import { useContext, useState } from "react";
+import { useState } from 'react';
 import styles from './styles.module.scss';
 import Modal from "react-modal"
 import { RecordsContext } from "../../RecordsContext";
 import { FormAglutinador } from "../FormAglutinador";
+
 
 export function ButtonAglutinador() {
   // const { records } = useContext(RecordsContext);

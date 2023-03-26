@@ -23,14 +23,26 @@
   }
 
   td {
-    padding: 1rem 2rem;
+    margin-left: 2rem;
+    padding: 1rem 1rem;
     border: 0;
     background-color: #cdd7e6;
     color: #000;
     border-radius: 0.25rem;
+    border: 2px solid #29292e;
 
     &:first-child {
       color: rgb(210, 39, 62);
     }
+  }
+
+  button {
+    margin-left: 1rem;
+    padding: 1rem 1rem;
+    border: 0;
+    margin: none;
+    border: none;
+    background: none;
+    color: rgb(210, 39, 62);
   }
 }

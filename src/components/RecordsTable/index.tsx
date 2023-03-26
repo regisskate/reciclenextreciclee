@@ -1,7 +1,10 @@
+
+import { Trash } from "@phosphor-icons/react";
 import { useContext } from "react";
 import { RecordsContext } from "../../RecordsContext";
 
 import styles from './styles.module.scss';
+
 
 export function RecordsTable() {
   const { records } = useContext(RecordsContext);
@@ -27,11 +30,12 @@ export function RecordsTable() {
                   new Date(record.createdAt)
                 )}
               </td>
-              {/* <td>{record.date}</td> */}
               <td>{record.category}</td>
               <td>{record.startTime}</td>
               <td>{record.endTime}</td>
               <td>{record.amount}</td>
+              <button><Trash size={20} /></button>
+
             </tr>
           ))}
         </tbody>
